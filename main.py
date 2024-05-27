@@ -45,10 +45,6 @@ class Player:
             self.health_bar.off()
             sleep(0.5)
 
-def Reset():
-    for player in players:
-        player.lives = 8
-
 # Initialize players with LEDBoard and Button
 player_1 = Player(LEDBoard(2, 3, 4, 17, 27, 22, 10, 9), Button(14))
 player_2 = Player(LEDBoard(21, 20, 16, 12, 1, 7, 8, 25), Button(15))
